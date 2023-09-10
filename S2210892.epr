@@ -1,0 +1,383 @@
+;
+; Arquivo de projeto Esrael Neto Assembler Editor para o Sonic 2 Final
+;
+;============================================================
+; O programa procurará o bloco de definições -> [Main]
+;============================================================
+
+[Main]
+  begin
+    Green Hill Zone Act 1
+    Green Hill Zone Act 2  
+    Wood Zone Act 1
+    Wood Zone Act 2    
+    Metropolis Zone Act 1
+    Metropolis Zone Act 2
+    Metropolis Zone Act 3         
+    Hill Top Zone Act 1
+    Hill Top Zone Act 2
+    Hidden Palace Zone
+    Oil Ocean Zone Act 1
+    Oil Ocean Zone Act 2
+    Dust Hill Zone Act 1
+    Dust Hill Zone Act 2
+    Casino Night Zone Act 1
+    Casino Night Zone Act 2
+    Chemical Plant Zone Act 1
+    Chemical Plant Zone Act 2
+    Neo Green Hill Zone Act 1
+    Neo Green Hill Zone Act 2  
+  end 
+
+[Assembler]
+  begin
+    Main = S2210892.asm
+  end;
+;============================================================
+; [Mode] is an session identifier
+; "Mode 0" is a identifier and can have Any Name
+; "Level Mode" is a session assigned to "Mode 0"
+;============================================================
+[Modes]
+  begin   
+    Mode 0 = Level Mode
+  end;
+;------------------------------------------------------------
+[Level Mode]
+  begin
+    Edit Mode   = Level    
+    Tiles       = Nemesis
+    Blocks      = No Compression
+    Chunks      = Kosinski
+    Layout      = No Compression
+    Chunk Mode  = 128x128
+    Map Mode    = Split
+    Respaw Mode = Y HiBit
+    Ring Mode   = Y HiBit
+    Object Path = %Project%\Editor\Objects
+  end;   
+;============================================================
+[Green Hill Zone Act 1]
+  begin
+    Edit Type   = Mode 0
+    Folder      = .\
+    Palette     = Data\All\Sonic.pal
+    Palette2    = Data\GHz\GHz.Pal
+    Tiles       = Data\GHz\Tiles.nem
+    Blocks      = Data\GHz\Blocks.dat
+    Chunks      = Data\GHz\Chunks.kos
+    Map         = Data\GHz\Fg_Map1.dat
+    Background  = Data\GHz\Bg_Map.dat
+    Objects     = Data\GHz\Obj_Act1.dat
+    Rings       = Data\GHz\Rng_Act1.dat
+    Table       = 
+    Table2      =
+  end;        
+;------------------------------------------------------------
+[Green Hill Zone Act 2]
+  begin
+    Edit Type   = Mode 0
+    Folder      = .\
+    Palette     = Data\All\Sonic.pal
+    Palette2    = Data\GHz\GHz.Pal
+    Tiles       = Data\GHz\Tiles.nem
+    Blocks      = Data\GHz\Blocks.dat
+    Chunks      = Data\GHz\Chunks.kos
+    Map         = Data\GHz\Fg_Map2.dat
+    Background  = Data\GHz\Bg_Map.dat    
+    Objects     = Data\GHz\Obj_Act2.dat
+    Rings       = Data\GHz\Rng_Act2.dat
+    Table       = 
+    Table2      = 
+  end;          
+;------------------------------------------------------------  
+[Wood Zone Act 1]
+  begin
+    Edit Type   = Mode 0
+    Folder      = .\
+    Palette     = Data\All\Sonic.pal
+    Palette2    = Data\Wz\Wz.Pal
+    Tiles       = Data\Wz\Tiles.nem
+    Blocks      = Data\Wz\Blocks.dat
+    Chunks      = Data\Wz\Chunks.kos
+    Map         = Data\Wz\Fg_Map1.dat
+    Background  = Data\Wz\Bg_Map1.dat
+    Objects     =
+    Rings       =
+    Table       = 
+    Table2      =
+  end;    
+;------------------------------------------------------------  
+[Wood Zone Act 2]
+  begin
+    Edit Type   = Mode 0
+    Folder      = .\
+    Palette     = Data\All\Sonic.pal
+    Palette2    = Data\Wz\Wz.Pal
+    Tiles       = Data\Wz\Tiles.nem
+    Blocks      = Data\Wz\Blocks.dat
+    Chunks      = Data\Wz\Chunks.kos
+    Map         = Data\Wz\Fg_Map2.dat
+    Background  = Data\Wz\Bg_Map2.dat
+    Objects     =
+    Rings       =
+    Table       = 
+    Table2      =
+  end;       
+;------------------------------------------------------------
+[Metropolis Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\Mz\Mz.Pal
+    Tiles       = Data\Mz\Tiles.nem
+    Blocks      = Data\Mz\Blocks.dat
+    Chunks      = Data\Mz\Chunks.kos
+    Map         = Data\Mz\Fg_Map1.dat
+    Background  = Data\Mz\Bg_Map.dat    
+    Objects     = Data\Mz\Obj_Act1.dat
+    Rings       = Data\Mz\Rng_Act1.dat
+    Table       = 
+    Table2      = 
+  end;
+;------------------------------------------------------------
+[Metropolis Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      =  .\
+    Palette2    = Data\Mz\Mz.Pal
+    Tiles       = Data\Mz\Tiles.nem
+    Blocks      = Data\Mz\Blocks.dat
+    Chunks      = Data\Mz\Chunks.kos
+    Map         = Data\Mz\Fg_Map2.dat
+    Background  = Data\Mz\Bg_Map.dat    
+    Objects     = Data\Mz\Obj_Act2.dat
+    Rings       = Data\Mz\Rng_Act2.dat
+    Table       = 
+    Table2      = 
+  end;
+;------------------------------------------------------------
+[Metropolis Zone Act 3]
+  begin
+    Edit Type =   Mode 0 
+    Folder      = .\
+    Palette2    = Data\Mz\Mz.Pal
+    Tiles       = Data\Mz\Tiles.nem
+    Blocks      = Data\Mz\Blocks.dat
+    Chunks      = Data\Mz\Chunks.kos
+    Map         = Data\Mz\Fg_Map3.dat
+    Background  = Data\Mz\Bg_Map.dat    
+    Objects     = Data\Mz\Obj_Act3.dat
+    Rings       = Data\Mz\Rng_Act3.dat
+    Table       = 
+    Table2      = 
+  end;
+;------------------------------------------------------------
+[Hill Top Zone Act 1]
+  begin
+    Edit Type =   Mode 0 
+    Folder      = .\
+    Palette2    = Data\HTz\HTz.Pal
+    Tiles       = Data\GHz\Tiles.nem
+    Blocks      = Data\GHz\Blocks.dat
+    Chunks      = Data\GHz\Chunks.kos
+    Map         = Data\HTz\Fg_Map1.dat
+    Background  = Data\HTz\Bg_Map1.dat    
+    Objects     = Data\HTz\Obj_Act1.dat
+    Rings       = Data\HTz\Rng_Act1.dat
+    Table       = 
+    Table2      =   
+  end;  
+;------------------------------------------------------------  
+[Hill Top Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\HTz\HTz.Pal
+    Tiles       = Data\GHz\Tiles.nem
+    Blocks      = Data\GHz\Blocks.dat
+    Chunks      = Data\GHz\Chunks.kos
+    Map         = Data\HTz\Fg_Map2.dat
+    Background  = Data\HTz\Bg_Map2.dat    
+    Objects     = Data\HTz\Obj_Act2.dat
+    Rings       = Data\HTz\Rng_Act2.dat
+    Table       = 
+    Table2      =   
+  end;    
+;------------------------------------------------------------
+[Hidden Palace Zone]
+  begin
+    Edit Type =   Mode 0 
+    Folder      = .\
+    Palette2    = Data\HPz\HPz.Pal
+    Tiles       = Data\HPz\Tiles.nem
+    Blocks      = Data\HPz\Blocks.dat
+    Chunks      = Data\HPz\Chunks.kos
+    Map         = Data\HPz\Fg_Map.dat
+    Background  = Data\HPz\Bg_Map.dat    
+    Objects     = Data\HPz\Obj_Act.dat
+    Rings       = Data\HPz\Rng_Act.dat
+    Table       = 
+    Table2      =   
+  end;  
+;------------------------------------------------------------
+[Oil Ocean Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\OOz\OOz.Pal
+    Tiles       = Data\OOz\Tiles.nem
+    Blocks      = Data\OOz\Blocks.dat
+    Chunks      = Data\OOz\Chunks.kos
+    Map         = Data\OOz\Fg_Map1.dat
+    Background  = Data\OOz\Bg_Map.dat    
+    Objects     = Data\OOz\Obj_Act1.dat
+    Rings       = Data\OOz\Rng_Act1.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------
+[Oil Ocean Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\OOz\OOz.Pal
+    Tiles       = Data\OOz\Tiles.nem
+    Blocks      = Data\OOz\Blocks.dat
+    Chunks      = Data\OOz\Chunks.kos
+    Map         = Data\OOz\Fg_Map2.dat
+    Background  = Data\OOz\Bg_Map.dat    
+    Objects     = Data\OOz\Obj_Act2.dat
+    Rings       = Data\OOz\Rng_Act2.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------
+[Dust Hill Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\DHz\DHz.Pal
+    Tiles       = Data\DHz\Tiles.nem
+    Blocks      = Data\DHz\Blocks.dat
+    Chunks      = Data\DHz\Chunks.kos
+    Map         = Data\DHz\Fg_Map1.dat
+    Background  = Data\DHz\Bg_Map.dat    
+    Objects     = Data\DHz\Obj_Act1.dat
+    Rings       = Data\DHz\Rng_Act1.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------   
+[Dust Hill Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\DHz\DHz.Pal
+    Tiles       = Data\DHz\Tiles.nem
+    Blocks      = Data\DHz\Blocks.dat
+    Chunks      = Data\DHz\Chunks.kos
+    Map         = Data\DHz\Fg_Map2.dat
+    Background  = Data\DHz\Bg_Map.dat    
+    Objects     = Data\DHz\Obj_Act2.dat
+    Rings       = Data\DHz\Rng_Act2.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------   
+[Casino Night Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\CNz\CNz_1.Pal
+    Tiles       = Data\CNz\Tiles.nem
+    Blocks      = Data\CNz\Blocks.dat
+    Chunks      = Data\CNz\Chunks.kos
+    Map         = Data\CNz\Fg_Map1.dat
+    Background  = Data\CNz\Bg_Map.dat    
+    Objects     =
+    Rings       =
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------   
+[Casino Night Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\CNz\CNz_2.Pal
+    Tiles       = Data\CNz\Tiles.nem
+    Blocks      = Data\CNz\Blocks.dat
+    Chunks      = Data\CNz\Chunks.kos
+    Map         = Data\CNz\Fg_Map2.dat
+    Background  = Data\CNz\Bg_Map.dat    
+    Objects     =
+    Rings       =
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------   
+[Chemical Plant Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\CPz\CPz.Pal
+    Tiles       = Data\CPz\Tiles.nem
+    Blocks      = Data\CPz\Blocks.dat
+    Chunks      = Data\CPz\Chunks.kos
+    Map         = Data\CPz\Fg_Map1.dat
+    Background  = Data\CPz\Bg_Map.dat    
+    Objects     = Data\CPz\Obj_Act1.dat
+    Rings       = Data\CPz\Rng_Act1.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------    
+[Chemical Plant Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\CPz\CPz.Pal
+    Tiles       = Data\CPz\Tiles.nem
+    Blocks      = Data\CPz\Blocks.dat
+    Chunks      = Data\CPz\Chunks.kos
+    Map         = Data\CPz\Fg_Map2.dat
+    Background  = Data\CPz\Bg_Map.dat    
+    Objects     = Data\CPz\Obj_Act2.dat
+    Rings       = Data\CPz\Rng_Act2.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------    
+[Neo Green Hill Zone Act 1]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\NGHz\NGHz.Pal
+    Tiles       = Data\NGHz\Tiles.nem
+    Blocks      = Data\NGHz\Blocks.dat
+    Chunks      = Data\NGHz\Chunks.kos
+    Map         = Data\NGHz\Fg_Map1.dat
+    Background  = Data\NGHz\Bg_Map1.dat    
+    Objects     = Data\NGHz\Obj_Act1.dat
+    Rings       = Data\NGHz\Rng_Act1.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------  
+[Neo Green Hill Zone Act 2]
+  begin
+    Edit Type   = Mode 0 
+    Folder      = .\
+    Palette2    = Data\NGHz\NGHz.Pal
+    Tiles       = Data\NGHz\Tiles.nem
+    Blocks      = Data\NGHz\Blocks.dat
+    Chunks      = Data\NGHz\Chunks.kos
+    Map         = Data\NGHz\Fg_Map2.dat
+    Background  = Data\NGHz\Bg_Map2.dat    
+    Objects     = Data\NGHz\Obj_Act2.dat
+    Rings       = Data\NGHz\Rng_Act2.dat
+    Table       = 
+    Table2      =   
+  end;
+;------------------------------------------------------------
